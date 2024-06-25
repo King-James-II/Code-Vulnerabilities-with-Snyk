@@ -5,7 +5,9 @@
 - Leveraged Snyk to scan a public GitHub repository for vulnerabilities.
 - Analyzed the generated report to identify security weaknesses categorized by severity.
 <br />
+
 ---
+
 <br />
 <br />
 <br />
