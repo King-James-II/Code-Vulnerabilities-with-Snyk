@@ -1,3 +1,11 @@
+# Hands-on Lab: Snyk Code Vulnerability Scanning
+
+## Tasks Accomplished:
+
+- Leveraged Snyk to scan a public GitHub repository for vulnerabilities.
+- Analyzed the generated report to identify security weaknesses categorized by severity.
+
+
 <p align="center">
     <img width="400px" height=auto src="https://bitnami.com/downloads/logos/bitnami-by-vmware.png" />
 </p>
@@ -9,11 +17,11 @@
     <a href="https://github.com/bitnami/containers/actions/workflows/ci-pipeline.yml"><img src="https://github.com/bitnami/containers/actions/workflows/ci-pipeline.yml/badge.svg" /></a>
 </p>
 
-# The Bitnami Containers Library
+## The Bitnami Containers Library
 
 Popular applications, provided by [Bitnami](https://bitnami.com), containerized and ready to launch.
 
-## Why use Bitnami Images?
+### Why use Bitnami Images?
 
 * Bitnami closely tracks upstream source changes and promptly publishes new versions of this image using our automated systems.
 * With Bitnami images the latest bug fixes and features are available as soon as possible.
@@ -24,7 +32,7 @@ Popular applications, provided by [Bitnami](https://bitnami.com), containerized 
 
 Looking to use our applications in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
 
-## Get an image
+##### Get an image
 
 The recommended way to get any of the Bitnami Images is to pull the prebuilt image from the [Docker Hub Registry](https://hub.docker.com/r/bitnami/).
 
@@ -48,7 +56,7 @@ docker build -t bitnami/APP .
 
 > Remember to replace the `APP`, `VERSION`, and `OPERATING-SYSTEM` placeholders in the example command above with the correct values.
 
-## Run the application using Docker Compose
+### Run the application using Docker Compose
 
 The main folder of each application contains a functional `docker-compose.yml` file. Run the application using it as shown below:
 
@@ -59,7 +67,7 @@ docker-compose up -d
 
 > Remember to replace the `APP` placeholder in the example command above with the correct value.
 
-## Vulnerability scan in Bitnami container images
+### Vulnerability scan in Bitnami container images
 
 As part of the release process, the Bitnami container images are analyzed for vulnerabilities. At this moment, we are using two different tools:
 
@@ -68,18 +76,18 @@ As part of the release process, the Bitnami container images are analyzed for vu
 
 This scanning process is triggered via a GH action for every PR affecting the source code of the containers, regardless of its nature or origin.
 
-## Retention policy
+### Retention policy
 
 Deprecated assets will be retained in the container registry ([Bitnami DockerHub org](https://hub.docker.com/u/bitnami)) without changes for, at least, 6 months after the deprecation.
 After that period, all the images will be moved to a new _"archived"_ repository. For instance, once deprecated an asset named _foo_ whose container repository was `bitnami/foo`, all the images will be moved to `bitnami/foo-archived` where they will remain indefinitely.
 
 Special images, like `bitnami/bitnami-shell` or `bitnami/sealed-secrets`, which are extensively used in Helm charts, will have an extended coexistence period of 1 year.
 
-## Contributing
+### Contributing
 
 We'd love for you to contribute to those container images. You can request new features by creating an [issue](https://github.com/bitnami/containers/issues/new/choose), or submit a [pull request](https://github.com/bitnami/containers/pulls) with your contribution.
 
-## License
+### License
 
 Copyright &copy; 2024 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
 
